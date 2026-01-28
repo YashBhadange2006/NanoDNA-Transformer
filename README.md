@@ -88,30 +88,20 @@ The notebook includes two illustrative cases:
 
 ## Example Results
 
-### Example 1: Single-point substitution
-
-**Healthy**
-```text
-ATGGTGCACCTGACTCCTGAGGAGAAG
-```
-
-**Mutated**
-```text
-ATGGTGCACCTGACTCCTGTGGAGAAG
-```
-![Single-point mutation Δ loss](images/single_point_substitution.png)
-
-### Example 2: Synthetic repetitive sequence
-**Healthy**
-```text
-ATGGTGCACCTGACTCCTGAGGAGAAG
-```
-
-**Mutated**
-```text
-AAAAAAAAAAAAAAAAAAAAAAAAAAA
-```
-![Synthetic sequence Δ loss](images/synthetic_substitution.png)
+<table>
+  <tr>
+    <td align="center">
+      <strong>Example 1: Single-point substitution</strong><br><br>
+      <img src="images/single_point_substitution.png" width="400"><br><br>
+      Localized likelihood change at the mutation site.
+    </td>
+    <td align="center">
+      <strong>Example 2: Synthetic repetitive sequence</strong><br><br>
+      <img src="images/synthetic_substitution.png" width="400"><br><br>
+      Global deviation from learned DNA patterns.
+    </td>
+  </tr>
+</table>
 
 These examples help build intuition about model behavior.
 
