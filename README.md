@@ -4,6 +4,29 @@ A deep learning–based DNA sequence analysis project that uses a decoder-only T
 This repository demonstrates how a decoder-only Transformer language model trained on healthy DNA can localize statistically unusual mutations by analyzing per-position likelihood shifts without relying on labeled data.
 
 
+## Example Results
+
+<table>
+  <tr>
+    <td align="center">
+      <strong>Example 1: Single-point substitution</strong><br><br>
+      <img src="images/single_point_substitution.png" width="400"><br><br>
+      Healthy = ATGGTGCACCTGACTCCTGAGGAGAAG
+      Mutated = ATGGTGCACCTGACTCCTGTGGAGAAG
+      Localized likelihood change at the mutation site.
+    </td>
+    <td align="center">
+      <strong>Example 2: Synthetic repetitive sequence</strong><br><br>
+      <img src="images/synthetic_substitution.png" width="400"><br><br>
+      Healthy = ATGGTGCACCTGACTCCTGAGGAGAAG
+      Mutated = AAAAAAAAAAAAAAAAAAAAAAAAAAA
+      Global deviation from learned DNA patterns.
+    </td>
+  </tr>
+</table>
+
+These examples help build intuition about model behavior.
+
 ## Project Overview
 
 This project explores how a neural language model trained on healthy genomic DNA can be used to analyze mutations without requiring labeled biological or disease data.
@@ -27,24 +50,7 @@ Through this training objective, the model learns:
 
 Mutations are analyzed by comparing how likely the model finds a reference sequence versus a modified sequence, evaluated position by position.
 
-## Example Results
 
-<table>
-  <tr>
-    <td align="center">
-      <strong>Example 1: Single-point substitution</strong><br><br>
-      <img src="images/single_point_substitution.png" width="400"><br><br>
-      Localized likelihood change at the mutation site.
-    </td>
-    <td align="center">
-      <strong>Example 2: Synthetic repetitive sequence</strong><br><br>
-      <img src="images/synthetic_substitution.png" width="400"><br><br>
-      Global deviation from learned DNA patterns.
-    </td>
-  </tr>
-</table>
-
-These examples help build intuition about model behavior.
 
 
 ## Model Architecture
