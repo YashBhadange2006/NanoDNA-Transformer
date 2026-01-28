@@ -86,6 +86,33 @@ The notebook includes two illustrative cases:
 1. A single-point substitution producing a localized likelihood spike.
 2. A synthetic repetitive sequence (`AAAAAAAA...`) producing consistently high loss across all positions.
 
+## Example Results
+
+### Example 1: Single-point substitution
+
+**Healthy**
+```text
+ATGGTGCACCTGACTCCTGAGGAGAAG
+```
+
+**Mutated**
+```text
+ATGGTGCACCTGACTCCTGTGGAGAAG
+```
+![Single-point mutation Δ loss](images/single_point_substitution.png)
+
+### Example 2: Synthetic repetitive sequence
+**Healthy**
+```text
+ATGGTGCACCTGACTCCTGAGGAGAAG
+```
+
+**Mutated**
+```text
+AAAAAAAAAAAAAAAAAAAAAAAAAAA
+```
+![Synthetic sequence Δ loss](images/synthetic_substitution.png)
+
 These examples help build intuition about model behavior.
 
 ## Dataset Source
