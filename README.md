@@ -49,7 +49,7 @@ The architecture is intentionally minimal to emphasize interpretability rather t
 
 For any DNA sequence, the model computes the negative log-likelihood at each position:
 ```math
-\text{loss}_i = -\log P(\text{base}_i \mid \text{base}_1, \dots, \text{base}_{i-1})
+\large \text{loss}_i = -\log P(\text{base}_i \mid \text{base}_1, \dots, \text{base}_{i-1})
 ```
 Lower loss indicates that the base is expected in context, while higher loss indicates statistical surprise.
 
@@ -60,9 +60,9 @@ Given a reference sequence and a mutated sequence:
 - Per-position losses are computed for both
 - The difference (Δ loss) is calculated:
 
-Δ_i = loss_i(mutated) − loss_i(reference)
-
-
+```math
+\large \Delta_i = \text{loss}_i(\text{mutated}) - \text{loss}_i(\text{reference})
+```
 ### Interpretation
 
 - Positive Δ loss indicates a statistically unlikely mutation
