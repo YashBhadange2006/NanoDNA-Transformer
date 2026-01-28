@@ -49,7 +49,7 @@ The architecture is intentionally minimal to emphasize interpretability rather t
 
 For any DNA sequence, the model computes the negative log-likelihood at each position:
 
-loss_i = −log P(base_i | base_1 … base_{i−1})
+\text{loss}_i = -\log P(\text{base}_i \mid \text{base}_1, \dots, \text{base}_{i-1})
 
 Lower loss indicates that the base is expected in context, while higher loss indicates statistical surprise.
 
