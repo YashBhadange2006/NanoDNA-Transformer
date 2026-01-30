@@ -29,6 +29,10 @@ These examples help build intuition about model behavior.
 
 ## Project Overview
 
+The figure below illustrates the decoder-only Transformer architecture used for autoregressive DNA sequence modeling in this project,relying solely on causal self-attention without any cross-attention mechanism.
+
+![Decoder-only Transformer architecture](images/Transformer_model_architecture.png)
+
 This project explores how a neural language model trained on healthy genomic DNA can be used to analyze mutations without requiring labeled biological or disease data.
 
 Rather than attempting to classify mutations as pathogenic or benign, the model answers a simpler and well-defined question:
